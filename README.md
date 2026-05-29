@@ -21,7 +21,7 @@
 
 ## 项目概述
 
-**AIWearable** 是一个完整的可穿戴 AI 设备解决方案，旨在为各类硬件平台提供统一的、功能丰富的 AI 交互体验。该项目支持多种硬件板卡，包括 SenseCAP Watcher、Waveshare ESP32-S3 Audio Board 和 M5StickC Plus2。
+**AIWearable** 是一个完整的可穿戴 AI 设备解决方案，旨在为各类硬件平台提供统一的、功能丰富的 AI 交互体验。该项目支持硬件板卡：Waveshare ESP32-S3 Audio Board。
 
 ### 主要特性
 
@@ -90,10 +90,8 @@
 
 | 开发板 | MCU | 显示屏 | 音频 | 闪存 | 特性 |
 |------|-----|-------|------|------|------|
-| **SenseCAP Watcher** | ESP32-S3 | SPD2010 1.47" | ES8311+ES7243 双麦 | 8MB | 生产就绪 |
 | **Waveshare Audio** | ESP32-S3 | 无 | ES8311+ES7210 双麦 | 16MB | 纯音频方案 |
-| **M5StickC Plus2** | ESP32-PICO-V3-02 | ST7789V2 1.14" | 蜂鸣器+PDM麦 | 8MB | 紧凑设计 |
-| **Generic ESP32-S3** | ESP32-S3 | 基础支持 | 基础支持 | - | 规划中 |
+
 
 ### 推荐规格
 - **MCU**：ESP32-S3（双核，240MHz）
@@ -333,7 +331,7 @@ AIWearable/
 
 ### 1. **board** - 硬件抽象层
 提供统一的硬件接口，支持多种开发板：
-- 显示屏驱动（SPD2010、ST7789、JD9853 等）
+- 显示屏驱动（JD9853）
 - 触摸屏支持
 - LED 灯条控制（RGB 环）
 - SD 卡接口
@@ -409,10 +407,7 @@ idf.py menuconfig
 
 ```
 ├─ Select target board
-│  ├─ SenseCAP Watcher
 │  ├─ Waveshare ESP32-S3 Audio Board
-│  ├─ M5StickC Plus2
-│  └─ Generic ESP32-S3 (future)
 │
 ├─ Wake word detection engine
 │  ├─ WakeNet (short wake phrase) [推荐]
