@@ -1,10 +1,10 @@
 # AIWearable - AI-Powered Wearable Device Firmware
-[![视频标题](https://链接到你的缩略图图片.jpg)](https://github.com/zhou19830318/AIWearable/blob/main/AIWearable.mp4)
 
 **AIWearable** 是一个基于 ESP32-S3 的开源可穿戴设备固件项目，整合了先进的 AI 语音交互能力、OpenClaw 网关集成，以及多种硬件支持。该项目使用 C 语言开发，基于 ESP-IDF 框架构建。
 
 ## 📋 目录
 
+- [效果演示](#效果演示)
 - [项目概述](#项目概述)
 - [主要功能](#主要功能)
 - [硬件支持](#硬件支持)
@@ -19,6 +19,8 @@
 - [许可证](#许可证)
 
 ---
+## 效果演示
+![演示GIF动图](https://github.com/zhou19830318/AIWearable/blob/main/AIWearable.gif)
 
 ## 项目概述
 
